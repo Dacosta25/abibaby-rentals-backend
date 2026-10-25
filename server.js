@@ -12,7 +12,10 @@ const app = express();
 
 // ⭐ FIXED CORS (only once, correct config)
 app.use(cors({
-  origin: "https://dacosta25.github.io",
+  origin: 
+  [ "http://localhost:5173",
+    "https://dacosta25.github.io"
+   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
